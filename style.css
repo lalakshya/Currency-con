@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: bisque;
+  transition: background 0.5s ease, color 0.5s ease; 
+}
+
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-height: 50vh;
+  width: 60vh;
+  max-width: 500px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+form {
+  margin: 2rem 0 1rem 0;
+}
+
+form select,
+button,
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+form input {
+  border: 1px solid lightgrey;
+  font-size: 1rem;
+  height: 3rem;
+  padding-left: 0.5rem;
+}
+
+form input:focus {
+  border-color: #af4d98;
+  box-shadow: 0 0 6px rgba(175, 77, 152, 0.6);
+  transform: scale(1.02);
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.dropdown i {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.dropdown i:hover {
+  transform: rotate(180deg);
+}
+
+.selectContainer img {
+  max-width: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.selectContainer img:hover {
+  transform: scale(1.1);
+}
+
+.selectContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  border-radius: 0.5rem;
+  border: 1px solid lightgrey;
+  background: #f9f9f9;
+  transition: background 0.3s ease;
+}
+
+.selectContainer:hover {
+  background: #eee;
+}
+
+.selectContainer select {
+  font-size: 1rem;
+  width: auto;
+  cursor: pointer;
+}
+
+.msg {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.msg .primary {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.extra-title {
+  font-weight: bold;
+  margin: 1rem 0 0.5rem 0;
+  text-align: left;
+}
+
+.extra-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.extra-table td {
+  padding: 0.3rem 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.extra-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+body.dark .extra-table tr:nth-child(even) {
+  background-color: #444;
+}
+
+body.dark .extra-table td {
+  color: #eee;
+  border-bottom: 1px solid #666;
+}
+
+body.dark .extra-title {
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .extra-table,
+  .extra-table tbody,
+  .extra-table tr,
+  .extra-table td {
+    display: block;
+    width: 100%;
+  }
+  .extra-table tr {
+    margin-bottom: 0.8rem;
+    background: #f9f9f9;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+  }
+  body.dark .extra-table tr {
+    background: #444;
+  }
+  .extra-table td {
+    text-align: center;
+    border: none;
+  }
+}
+
+form button {
+  height: 3rem;
+  background-color: rgba(175, 77, 152, 0.8);
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: rgba(175, 77, 152, 1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.language {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.language select {
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+body.dark {
+  background-color: #222;
+  color: #fff;
+}
+body.dark .container {
+  background-color: #333;
+  color: #fff;
+}
+#darkToggle {
+  background: #444;
+  color: white;
+  font-size: 1rem;
+  transition: background 0.3s, transform 0.3s;
+}
+#darkToggle:hover {
+  background: #222;
+  transform: scale(1.05);
+}
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <div class="language">
+      <label for="lang">🌐 Language: </label>
+      <select id="lang">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="hi">हिंदी</option>
+        <option value="zh">中文</option>
+      </select>
+    </div>
+
+    <h2>Currency Converter</h2>
+    <form>
+      <div class="amount">
+        <p>Enter Amount : </p>
+        <input value="100" type="text" />
+      </div>
+
+      <div class="dropdown">
+        
+        <div class="from">
+          <p>From</p>
+          <div class="selectContainer">
+            <img src="https://flagsapi.com/US/flat/64.png">
+            <select name="from"></select>
+          </div>
+        </div>
+
+        
+        <i class="fa-solid fa-right-left"></i>
+
+        
+        <div class="to">
+          <p>To</p>
+          <div class="selectContainer">
+            <img src="https://flagsapi.com/IN/flat/64.png">
+            <select name="to"></select>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="msg">
+        <div class="primary">100 USD = 8733.01 INR</div>
+        <div class="extras"></div>
+      </div>
+
+      
+      <button id="convertBtn">Convert</button>
+      <button type="button" id="darkToggle">🌙 Dark Mode</button>
+    </form>
+  </div>
+
+  <script src="codes.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
